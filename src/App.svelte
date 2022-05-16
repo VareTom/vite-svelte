@@ -1,5 +1,6 @@
 <script lang="ts">
   import { connectedUser } from './store';
+  import { onMount, onDestroy } from 'svelte';
 
   // Components
   import Header from './components/header.svelte';
@@ -14,6 +15,10 @@
 
   let user: User;
   connectedUser.subscribe(u => user = u);
+
+  onMount(() => {
+
+  });
 
 </script>
 
